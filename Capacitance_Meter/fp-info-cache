@@ -1,4 +1,4 @@
-18628439198723531
+18630031741816311
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -75429,8 +75429,8 @@ STM32F411CEU6
 
 
 0
-0
-0
+40
+40
 Sensor
 Aosong_DHT11_5.5x12.0_P2.54mm
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/DHT11.pdf
@@ -81276,6 +81276,13 @@ transformer flyback
 0
 10
 10
+USB_Connectors
+USB_micro_B_female
+
+
+0
+5
+5
 Valve
 Valve_ECC-83-1
 Valve ECC-83-1 round pins
