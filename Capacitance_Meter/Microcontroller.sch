@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
+Sheet 3 5
 Title ""
 Date ""
 Rev ""
@@ -13,17 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L STM32_Dev_Boards:STM32F411CEU6 STM32
-U 1 1 5ECA77B9
-P 5450 3850
-F 0 "STM32" H 5450 5515 50  0000 C CNN
-F 1 "STM32F411CEU6" H 5450 5424 50  0000 C CNN
-F 2 "STM32_Dev_Boards:STM32F411CEU6" H 5500 4450 50  0001 C CNN
-F 3 "" H 5500 4450 50  0001 C CNN
-	1    5450 3850
-	1    0    0    -1  
-$EndComp
 NoConn ~ 4950 2450
 NoConn ~ 4950 2600
 NoConn ~ 4950 2750
@@ -98,7 +87,94 @@ Wire Wire Line
 Wire Wire Line
 	4800 5150 4950 5150
 Wire Wire Line
-	5950 2450 6100 2450
-Wire Wire Line
 	5950 2600 6100 2600
+Wire Wire Line
+	5950 2450 6100 2450
+Text GLabel 5950 2900 2    50   Input ~ 0
+Q1_pin
+Text GLabel 5950 3050 2    50   Input ~ 0
+Q2_pin
+Text GLabel 5950 3200 2    50   Input ~ 0
+Q3_pin
+Text GLabel 5950 3350 2    50   Input ~ 0
+Q4_pin
+Text GLabel 5950 3500 2    50   Input ~ 0
+Q5_pin
+Text GLabel 5950 3650 2    50   Input ~ 0
+Q6_pin
+Text GLabel 5950 4250 2    50   Input ~ 0
+OpAmp1
+Text GLabel 5950 5000 2    50   Input ~ 0
+OpAmp2
+Text GLabel 5950 5150 2    50   Input ~ 0
+Button_pin
+Text GLabel 6950 4400 2    50   Input ~ 0
+SDA
+Text GLabel 6950 4550 2    50   Input ~ 0
+SCL
+$Comp
+L Device:R R2
+U 1 1 5EDCDB8B
+P 6800 4150
+F 0 "R2" H 6870 4196 50  0000 L CNN
+F 1 "10k" H 6870 4105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6730 4150 50  0001 C CNN
+F 3 "~" H 6800 4150 50  0001 C CNN
+	1    6800 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5EDCECA1
+P 6500 4150
+F 0 "R1" H 6570 4196 50  0000 L CNN
+F 1 "10k" H 6570 4105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6430 4150 50  0001 C CNN
+F 3 "~" H 6500 4150 50  0001 C CNN
+	1    6500 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 4300 6500 4550
+Wire Wire Line
+	6500 4550 6950 4550
+$Comp
+L power:+3.3V #PWR01
+U 1 1 5EDD1C38
+P 6650 3950
+F 0 "#PWR01" H 6650 3800 50  0001 C CNN
+F 1 "+3.3V" H 6665 4123 50  0000 C CNN
+F 2 "" H 6650 3950 50  0001 C CNN
+F 3 "" H 6650 3950 50  0001 C CNN
+	1    6650 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 4300 6800 4400
+Wire Wire Line
+	6800 4400 6950 4400
+Wire Wire Line
+	6500 4000 6650 4000
+Wire Wire Line
+	6650 4000 6650 3950
+Connection ~ 6650 4000
+Wire Wire Line
+	6650 4000 6800 4000
+Wire Wire Line
+	5950 4400 6800 4400
+Connection ~ 6800 4400
+Wire Wire Line
+	5950 4550 6500 4550
+Connection ~ 6500 4550
+$Comp
+L STM32_Dev_Boards:STM32F411CEU6 STM1
+U 1 1 5EDCD317
+P 5450 3850
+F 0 "STM1" H 5450 5515 50  0000 C CNN
+F 1 "STM32F411CEU6" H 5450 5424 50  0000 C CNN
+F 2 "STM32_Dev_Boards:STM32F411CEU6" H 5500 4450 50  0001 C CNN
+F 3 "" H 5500 4450 50  0001 C CNN
+	1    5450 3850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

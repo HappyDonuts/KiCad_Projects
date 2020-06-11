@@ -1,4 +1,4 @@
-18630031741816311
+18631623264414597
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -75879,6 +75879,13 @@ https://www.farnell.com/cad/316865.pdf?_ga=2.37208032.177107060.1530611323-24901
 0
 48
 48
+Switches
+Vertical_slide_switch
+
+
+0
+5
+5
 Symbol
 CE-Logo_8.5x6mm_SilkScreen
 CE marking
@@ -81281,8 +81288,8 @@ USB_micro_B_female
 
 
 0
-5
-5
+11
+6
 Valve
 Valve_ECC-83-1
 Valve ECC-83-1 round pins
