@@ -18,9 +18,11 @@ SCL
 Text GLabel 5150 3500 0    50   Input ~ 0
 SDA
 $Comp
-L Displays:SSD1306_OLED_I2C OLED1
+L Capacitance_Meter-rescue:SSD1306_OLED_I2C-Displays OLED1
 U 1 1 5EDD94F4
 P 5350 3750
+AR Path="/5EDD94F4" Ref="OLED1"  Part="1" 
+AR Path="/5EDD6869/5EDD94F4" Ref="OLED1"  Part="1" 
 F 0 "OLED1" H 5300 4150 50  0000 L CNN
 F 1 "SSD1306_OLED_I2C" H 5100 3400 50  0000 L CNN
 F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 5100 3800 50  0001 C CNN
