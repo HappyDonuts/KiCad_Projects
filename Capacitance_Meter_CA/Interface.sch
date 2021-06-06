@@ -1,0 +1,83 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 5150 3650 0    50   Input ~ 0
+SCL
+Text GLabel 5150 3500 0    50   Input ~ 0
+SDA
+$Comp
+L Capacitance_Meter-rescue:SSD1306_OLED_I2C-Displays OLED1
+U 1 1 5EDD94F4
+P 5350 3750
+AR Path="/5EDD94F4" Ref="OLED1"  Part="1" 
+AR Path="/5EDD6869/5EDD94F4" Ref="OLED1"  Part="1" 
+F 0 "OLED1" H 5300 4150 50  0000 L CNN
+F 1 "SSD1306_OLED_I2C" H 5100 3400 50  0000 L CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 5100 3800 50  0001 C CNN
+F 3 "" H 5100 3800 50  0001 C CNN
+	1    5350 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 5EDDA2E8
+P 4800 3950
+F 0 "#PWR013" H 4800 3700 50  0001 C CNN
+F 1 "GND" H 4805 3777 50  0000 C CNN
+F 2 "" H 4800 3950 50  0001 C CNN
+F 3 "" H 4800 3950 50  0001 C CNN
+	1    4800 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR012
+U 1 1 5EDDA6E2
+P 4800 3800
+F 0 "#PWR012" H 4800 3650 50  0001 C CNN
+F 1 "+3.3V" H 4815 3973 50  0000 C CNN
+F 2 "" H 4800 3800 50  0001 C CNN
+F 3 "" H 4800 3800 50  0001 C CNN
+	1    4800 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3800 5150 3800
+Wire Wire Line
+	4800 3950 5150 3950
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5EDDB8ED
+P 6800 3550
+F 0 "SW2" H 6800 3835 50  0000 C CNN
+F 1 "SW_Push" H 6800 3744 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 6800 3750 50  0001 C CNN
+F 3 "~" H 6800 3750 50  0001 C CNN
+	1    6800 3550
+	1    0    0    -1  
+$EndComp
+Text GLabel 6600 3550 0    50   Input ~ 0
+Button_pin
+$Comp
+L power:GND #PWR014
+U 1 1 5EDDC581
+P 7000 3550
+F 0 "#PWR014" H 7000 3300 50  0001 C CNN
+F 1 "GND" H 7005 3377 50  0000 C CNN
+F 2 "" H 7000 3550 50  0001 C CNN
+F 3 "" H 7000 3550 50  0001 C CNN
+	1    7000 3550
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
